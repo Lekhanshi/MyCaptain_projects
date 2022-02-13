@@ -1,0 +1,19 @@
+//now how do you swap two numbers without an extra variable yaar//
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int a=0,b=0;
+    printf("Let's swap two numbers, shall we?\n");
+    printf ("Great then, enter the first no. please\n");
+    scanf ("%d", &a);
+    printf ("Now I'd like you to enter the second no.\n");
+    scanf ("%d", &b);
+    printf ("\n okay so till now, we have got two numbers from you. First is a : %d and the second is b : %d. We shall now swap them.", a,b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf ("\n We may now see that the numbers have been swapped. So a is %d and b is %d",a,b);
+
+    return 0;
+}
