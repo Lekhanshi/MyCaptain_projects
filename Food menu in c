@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    printf ("\nLet's present you a food menu");
+    printf ("\nEnter a random number from 1-5\n");
+    int ch;
+    scanf ("%d", &ch);
+    switch (ch)
+    {
+        case 1 : printf ("\nHave a pizza at Rs.239"); break;
+        case 2 : printf ("\nHave a burger at Rs.129"); break;
+        case 3 : printf ("\nHave our pasta at Rs.179"); break;
+        case 4 : printf ("\nHave french fries at Rs.99"); break;
+        case 5 : printf ("\nHave a sandwich at Rs.149"); break;
+        default : printf ("\nInvalid input");
+    }
+    return 0;
