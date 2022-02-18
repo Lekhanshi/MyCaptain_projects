@@ -1,0 +1,64 @@
+#include<stdio.h> 
+int ryt_tri();
+int hol_rect();
+int main()
+{
+    printf ("Choose what pattern you'd like to see :\n1.Right angled triangle\n2.Hollow reectangle\n");
+    int ch;
+    scanf ("%d",&ch);
+    switch (ch)
+    {case 1 :
+    {//function for right angled triangle using 01
+    ryt_tri(); break;}
+    case 2 :
+    {//function for hollow rectangle using *
+    hol_rect(); break;}
+    default : printf ("\nInvalid input\n");}
+}
+int ryt_tri ()
+{
+    int n=0,i=0,j=0;
+    printf ("Enter the no. of rows\n");
+    scanf ("%d",&n);
+    for (i=0;i<n;i++)
+    {
+        for (j=0;j<=i;j++)
+        {
+            printf ("01");
+        }
+        printf ("\n");
+    }
+    return 0;
+}
+int hol_rect ()
+{
+    int i=0,j=0,h=0,w=0;
+    printf ("Specify the units for height and width of rectangle\n");
+    scanf ("%d",&h);
+    scanf ("%d",&w);
+    for (i=0;i<h;i++)
+    {
+      printf ("\n");
+            if (i==0||i==(h-1))
+            {
+                for (j=0;j<w;j++)
+                { 
+                    printf ("*");
+                }
+                //printf ("\n");
+            }
+            else
+            {
+                for (j=0;j<w;j++)
+                {
+                    if (j==0||j==(w-1))
+                    printf ("*");
+                    else
+                    printf (" ");
+                    
+                }
+                
+            }
+    }
+    return 0;
+}
